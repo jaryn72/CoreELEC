@@ -1,16 +1,18 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-# Copyright (C) 2009-2016 Stephan Raue (stephan@openelec.tv)
-# Copyright (C) 2018-present Team LibreELEC (https://libreelec.tv)
+# Copyright (C) 2019-present Team CoreELEC (https://coreelec.org)
 
-PKG_NAME="RTL8812AU"
-PKG_VERSION="61d0cd95afc01eae64da0c446515803910de1a00"
-PKG_SHA256="8d36737540b1a47e56174ced61194f3b596999609ce8c18ac466dbd42b48bc0b"
+PKG_NAME="RTL8814AU"
+PKG_VERSION="a0c44795f06d846b656ebac3310ba8f80f41333d"
+PKG_SHA256="b4da15f5160cf402d6b2d274cb8bc9c77ca4b533df63a76c9109fe97233cec03"
+PKG_ARCH="any"
 PKG_LICENSE="GPL"
-PKG_SITE="https://github.com/paspro/rtl8812au"
-PKG_URL="https://github.com/paspro/rtl8812au/archive/$PKG_VERSION.tar.gz"
+PKG_SITE="https://github.com/tpircher/rtl8814AU"
+PKG_URL="https://github.com/tpircher/rtl8814AU/archive/$PKG_VERSION.tar.gz"
+PKG_SOURCE_DIR="rtl8814AU-$PKG_VERSION*"
 PKG_DEPENDS_TARGET="toolchain linux"
 PKG_NEED_UNPACK="$LINUX_DEPENDS"
-PKG_LONGDESC="Realtek RTL8812AU Linux 3.x driver"
+PKG_SECTION="driver"
+PKG_LONGDESC="Realtek RTL8814AU Linux drivers"
 PKG_IS_KERNEL_PKG="yes"
 
 pre_make_target() {
