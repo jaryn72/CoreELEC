@@ -1,6 +1,7 @@
-# SPDX-License-Identifier: GPL-2.0-or-later
+# SPDX-License-Identifier: GPL-3.0-or-later
 # Copyright (C) 2009-2016 Stephan Raue (stephan@openelec.tv)
-# Copyright (C) 2018-present Team LibreELEC (https://libreelec.tv)
+# Copyright (C) 2018-2019 Team LibreELEC (https://libreelec.tv)
+# Copyright (C) 2019-present Team CoreELEC (https://coreelec.org)
 
 PKG_NAME="iptables"
 PKG_VERSION="1.8.2"
@@ -22,8 +23,8 @@ post_makeinstall_target() {
   mkdir -p $INSTALL/etc/iptables/
     cp -PR $PKG_DIR/config/* $INSTALL/etc/iptables/
 
-  mkdir -p $INSTALL/usr/lib/libreelec
-    cp $PKG_DIR/scripts/iptables_helper $INSTALL/usr/lib/libreelec
+  mkdir -p $INSTALL/usr/lib/coreelec
+    cp $PKG_DIR/scripts/iptables_helper $INSTALL/usr/lib/coreelec
 }
 
 post_install() {
